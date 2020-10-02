@@ -5,7 +5,7 @@ This ESP32 Arduino library for an 64x32 RGB LED (HUB 75 type) 1/16 Scan LED Matr
 As a result, this library can theoretically provide ~16-24 bit colour, at various brightness levels without noticeable flicker.
 
 ## Panels Supported
-62x32 pixel 1/16 Scan LED Matrix 'Indoor' Panel, such as this [typical RGB panel available for purchase](https://www.aliexpress.com/item/256-128mm-64-32-pixels-1-16-Scan-Indoor-3in1-SMD2121-RGB-full-color-P4-led/32810362851.html). 
+64x32 pixel 1/16 Scan LED Matrix 'Indoor' Panel, such as this [typical RGB panel available for purchase](https://www.aliexpress.com/item/256-128mm-64-32-pixels-1-16-Scan-Indoor-3in1-SMD2121-RGB-full-color-P4-led/32810362851.html). 
 
 ## Panels Not Supported
 * 1/8 Scan LED Matrix Panels are not supported, please use an alternative library if you bought one of these.
@@ -27,7 +27,7 @@ By default the pin mapping is as follows (defaults defined in ESP32-RGB64x32Matr
 |  R1   G1  |    R1  -> IO25      G1  -> IO26
 |  B1   GND |    B1  -> IO27
 |  R2   G2  |    R2  -> IO14      G2  -> IO12
-|  B2   GND |    B2  -> IO13
+|  B2   E   |    B2  -> IO13      E   ->         (only on HUB75E)
 |   A   B   |    A   -> IO23      B   -> IO19
 |   C   D   |    C   -> IO 5      D   -> IO17
 | CLK   LAT |    CLK -> IO16      LAT -> IO 4
